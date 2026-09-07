@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>You're in! — AI for Program Ops</title>
+<style>
+  :root{
+    --bg: #2A1B14;
+    --bg-darker: #1E120D;
+    --card: #35241A;
+    --cream: #F6EDDD;
+    --cream-dim: #D9C9B0;
+    --gold: #E3A75A;
+    --gold-light: #F4D9A6;
+    --gold-dark: #C98A3A;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--cream);
+    min-height:100vh;
+    display:flex; align-items:center; justify-content:center;
+    padding:24px;
+  }
+  .card{
+    max-width:520px;
+    background: var(--card);
+    border: 1px solid rgba(227,167,90,0.25);
+    border-radius:18px;
+    padding:48px 36px;
+    text-align:center;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+  }
+  .check{
+    width:64px; height:64px; border-radius:50%;
+    background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+    display:flex; align-items:center; justify-content:center;
+    margin:0 auto 24px; font-size:28px; color:var(--bg-darker); font-weight:800;
+  }
+  h1{font-size:28px; margin-bottom:14px; color:var(--cream);}
+  p{color:var(--cream-dim); font-size:16px; margin-bottom:28px; line-height:1.6;}
+  a.download{
+    display:inline-block;
+    background: var(--gold);
+    color: var(--bg-darker);
+    font-weight:700;
+    padding:14px 28px;
+    border-radius:10px;
+    text-decoration:none;
+    font-size:16px;
+  }
+  a.download:hover{background: var(--gold-light);}
+  .footer-note{
+    margin-top:28px; font-size:13px; color:var(--cream-dim); opacity:0.8;
+  }
+  .footer-note a{color:var(--gold); text-decoration:none;}
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="check">✓</div>
+    <h1>You're in.</h1>
+    <p>Your 12 prompts are ready — open the doc below and start with Section 1 whenever you have 20 quiet minutes.</p>
+    <a class="download" href="https://docs.google.com/document/d/1uW0Sv0NUbWvRSEkILvdzhVpKFj8NcIaO1-Xi3EdxTFA/view" target="_blank">Open the doc →</a>
+    <p class="footer-note" style="margin-top:14px;">You can download it as a PDF or Word file directly from Google Docs: File → Download.</p>
+    <p class="footer-note">Questions, or want help applying these to your program? Connect on <a href="https://www.linkedin.com/in/somi-ak/" target="_blank">LinkedIn</a> and DM "Ops."</p>
+  </div>
+  <script>
+    window.addEventListener('load', function () {
+      window.open('https://docs.google.com/document/d/1uW0Sv0NUbWvRSEkILvdzhVpKFj8NcIaO1-Xi3EdxTFA/view', '_blank');
+    });
+  </script>
+</body>
+</html>
